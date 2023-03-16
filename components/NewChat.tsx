@@ -6,6 +6,7 @@ import { db } from '../firebase';
 import { addDoc, collection, serverTimestamp } from 'firebase/firestore';
 import { timeStamp } from 'console';
 
+
 const NewChat = () => {
   const {data: session} = useSession();
   const router = useRouter();
