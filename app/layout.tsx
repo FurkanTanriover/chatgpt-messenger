@@ -4,6 +4,7 @@ import "../styles/globals.css";
 import { getServerSession } from "next-auth";
 import { authOptions } from "../pages/api/auth/[...nextauth]";
 import Login from "../components/Login";
+import ClientProvider from "../components/ClientProvider";
 
 export const metadata = {
   title: "Next.js",
@@ -26,6 +27,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
                 <SideBar />
               </div>
               {/* client provider - notification */}
+              <ClientProvider/>
               <div className="flex-1 bg-[#343541]">{children}</div>
             </div>
           </SessionProvider>
