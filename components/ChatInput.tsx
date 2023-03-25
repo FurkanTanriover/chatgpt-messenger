@@ -2,7 +2,7 @@
 import { PaperAirplaneIcon } from "@heroicons/react/24/solid";
 import { useSession } from "next-auth/react";
 import React, { FormEvent, useState } from "react";
-import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import { addDoc, collection, serverTimestamp, Timestamp } from "firebase/firestore";
 import { db } from "../firebase";
 import {toast} from "react-hot-toast";
 
@@ -25,7 +25,7 @@ function ChatInput({ chatId }: Props) {
     setPrompt("");
     const message: Message = {
       text: input,
-      createdAt: new Date().toISOString(),
+      createdAt: Timestamp.now(),
       user: {
         _id: session?.user?.email!,
         name: session?.user?.name!,
