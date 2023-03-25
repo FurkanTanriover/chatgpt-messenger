@@ -1,27 +1,43 @@
-# Next.js + Tailwind CSS Example
+## ChatGPT Messenger
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+ChatGPT Messenger, OpenAI tarafından geliştirilen GPT-3 modeli kullanarak otomatik yanıtlar veren bir chatbot ile etkileşime geçebileceğiniz bir web uygulamasıdır.
 
-## Deploy your own
+## Özellikler
+
+- Kimlik doğrulama: Kullanıcılar güvenli bir şekilde kaydolabilir, oturum açabilir ve oturumu kapatabilir.
+- Sohbet: Kullanıcılar doğal dil kullanarak diğer kullanıcılarla sohbet edebilirler. Uygulama, insan benzeri yanıtlar oluşturmak için OpenAI'nin GPT-3'ünü kullanır.
+
+## Kullanılan Teknolojiler
+
+ChatGPT Messenger, aşağıdaki teknolojileri kullanır:
+
+- Next.js - React tabanlı bir web uygulama çatısı
+- NextAuth.js - Node.js tabanlı web uygulamalrı için kullanılabilen bir kimlik doğrulama çerçevesidir
+- OpenAI API - Otomatik yanıt veren chatbot için kullanılan yapay zeka platformu
+- Firebase Authentication - Kullanıcı kimlik doğrulama ve yönetimi için kullanılan bir araç
+- Tailwind CSS - Önceden oluşturulmuş CSS stilleri ve komutları içeren bir CSS çerçevesi
 
 Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
 
-## How to use
+## Nasıl Kullanılır?
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+ChatGPT Messenger'ı kullanmak için aşağıdaki adımları izleyebilirsiniz:
 
 ```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
+git clone https://github.com/FurkanTanriover/chatgpt-messenger.git
 ```
 
 ```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
+cd chatgpt-messenger
+npm install
 ```
 
 ```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
+export NEXT_PUBLIC_OPENAI_API_KEY=<your_openai_api_key>
 ```
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+```bash
+npm run dev
+```
