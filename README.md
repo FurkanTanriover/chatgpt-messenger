@@ -17,9 +17,6 @@ ChatGPT Messenger, aşağıdaki teknolojileri kullanır:
 - Firebase Authentication - Kullanıcı kimlik doğrulama ve yönetimi için kullanılan bir araç
 - Tailwind CSS - Önceden oluşturulmuş CSS stilleri ve komutları içeren bir CSS çerçevesi
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
-
-
 ## Nasıl Kullanılır?
 
 ChatGPT Messenger'ı kullanmak için aşağıdaki adımları izleyebilirsiniz:
