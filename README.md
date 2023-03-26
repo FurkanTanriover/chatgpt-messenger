@@ -19,7 +19,7 @@ ChatGPT Messenger, aşağıdaki teknolojileri kullanır:
 
 ## Canlı
 
-[Vercel](https://chatgpt-messenger-mbcgxahxv-furkantanriover.vercel.app/)
+[Vercel](https://chatgpt-messenger-iota.vercel.app/)
 
 ## Nasıl Kullanılır?
 
